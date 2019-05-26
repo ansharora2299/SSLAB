@@ -24,6 +24,10 @@ int find_sym(char x[])
 	{
 		if(strcmp(k_sym[i],x)==0)
 		{
+		    if(x[strlen(x)-1]=='X')
+            {
+                v_sym[i] = v_sym[i] + 0x8000;
+            }
 			return v_sym[i];
 		}
 	}
