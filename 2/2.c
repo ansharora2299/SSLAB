@@ -82,6 +82,10 @@ void main()
             }
             fprintf(fp4,"\n");
         }
+        else if(strcmp(b,"RSUB")==0)
+        {
+            fprintf(fp4,"%X\t%s\t%s\t%s\t4C0000\n",loc,a,b,c);
+        }
         else if(find_op(b)!=-1)
         {
             fprintf(fp4,"%X\t%s\t%s\t%s\t%02X%04X\n",loc,a,b,c,find_op(b),find_sym(c));
