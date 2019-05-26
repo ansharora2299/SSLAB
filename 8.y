@@ -29,6 +29,6 @@ return 0;
 }
 void main()
 {
-printf("enter the xpession\n");
+printf("enter the expression\n");
 yyparse();
 }

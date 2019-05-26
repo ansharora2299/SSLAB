@@ -16,7 +16,7 @@ alphanumeric: LETTER alphanumeric
 %%
 int yyerror(char *msg)
 {
-printf("invaklid\n");
+printf("invalid identifier\n");
 return 0;
 }
 void main()
