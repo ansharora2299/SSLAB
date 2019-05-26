@@ -62,14 +62,14 @@ void main()
     fclose(fp3);
 
     fscanf(fp1,"%X\t%s\t%s\t%s",&loc,a,b,c);
-    fprintf(fp4,"%X\t%s\t%s\t%s\n",loc,a,b,c);
+    fprintf(fp4,"%X\t%s\t%s\t%s\t-\n",loc,a,b,c);
 
     while(strcmp(b,"END")!=0)
     {
         fscanf(fp1,"%X\t%s\t%s\t%s",&loc,a,b,c);
         if(strcmp(b,"RESB")==0 || strcmp(b,"RESW")==0 || strcmp(b,"END")==0)
         {
-            fprintf(fp4,"%X\t%s\t%s\t%s\n",loc,a,b,c);
+            fprintf(fp4,"%X\t%s\t%s\t%s\t-\n",loc,a,b,c);
         }
         else if(strcmp(b,"WORD")==0)
         {
