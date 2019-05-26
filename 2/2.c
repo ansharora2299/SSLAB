@@ -79,8 +79,8 @@ void main()
         else if(strcmp(b,"BYTE")==0)
         {
             fprintf(fp4,"%X\t%s\t%s\t%s\t",loc,a,b,c);
-            int j,k=0;
-            for(j=2;j<strlen(c)-1;j++,k++)
+            int j;
+            for(j=2;j<strlen(c)-1;j++)
             {
                 fprintf(fp4,"%X",c[j]);
             }
